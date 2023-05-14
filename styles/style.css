@@ -1,0 +1,25 @@
+/* .juego {
+    padding: 20px;
+    background: #f8f9fa;
+} */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+.card-body {
+    padding: 20px;
+}
+#sentence {
+    font-size: 1.5rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+#level {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+}
+.progress-bar {
+    background-color: #007bff;
+}

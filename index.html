@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Leon Inglés - Un juego para aprender Inglés</title>
+</head>
+
+<body>
+
+    <div class="container fixed-top bg-white">
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-2 border-bottom">
+            <div class="col-md-3 mb-2 mb-md-0">
+            <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+            </div>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="./index.html" class="nav-link px-2 link-secondary">Inicio</a></li>
+                <li><a href="./pages/jugar.html" class="nav-link px-2">JUGAR</a></li>
+                <li><a href="./pages/precios.html" class="nav-link px-2">Precios</a></li>
+                <li><a href="./pages/faqs.html" class="nav-link px-2">FAQs</a></li>
+                <li><a href="./pages/sobre-nosotros.html" class="nav-link px-2">Sobre Nosotros</a></li>
+            </ul>
+
+            <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-primary me-2">Inicio</button>
+                <button type="button" class="btn btn-primary">Registrarse</button>
+            </div>
+        </header>
+    </div>
+
+
+
+    <main>
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="./assets/LION-4.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                        width="300" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">León Inglés
+                    </h1>
+                    <p class="lead">Bienvenido a León Inglés, un desafío donde ayudarás a León y a sus amigos a
+                        comunicarse en inglés. Guía a este león hacia la sabiduría lingüística, respondiendo a las
+                        oraciones que te propone la IA.
+                        </p>
+                    
+                        <a class="text-decoration-none" href="./pages/jugar.html">
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Comenzar a Jugar</button>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+        </div>
+
+
+        <div class="container py-5 px-4">
+            <!-- For demo purpose-->
+            <header class="text-center">
+                <h1 class="display-4 text-wrap">Chat Bootstrap</h1>
+            </header>
+    
+            <div class="row rounded-lg overflow-hidden shadow">
+                <!-- Chat Box-->
+                <div class="col-12 px-0">
+                    <div class="px-4 py-5 chat-box bg-white">
+                        <!-- Receiver Message-->
+                        <div class="media w-50 mb-3">
+                            <img src="https://placeholder.com/50" alt="user" width="50" class="rounded-circle">
+                            <div class="media-body ml-3">
+                                <div class="bg-light rounded py-2 px-3 mb-2">
+                                    <p class="text-small mb-0 text-muted">Mensaje de prueba del usuario</p>
+                                </div>
+                                <p class="small text-muted">12:00 PM | Hoy</p>
+                            </div>
+                        </div>
+    
+                        <!-- Sender Message-->
+                        <div class="media w-50 ml-auto mb-3">
+                            <div class="media-body">
+                                <div class="bg-primary rounded py-2 px-3 mb-2">
+                                    <p class="text-small mb-0 text-white">Mensaje de prueba del servidor</p>
+                                </div>
+                                <p class="small text-muted">12:05 PM | Hoy</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Typing area -->
+                    <form class="bg-light">
+                        <div class="input-group">
+                            <input type="text" class="form-control rounded-0 border-0 py-4 bg-light" placeholder="Escribe un mensaje...">
+                            <div class="input-group-append">
+                                <button id="button-addon2" type="submit" class="btn btn-link"> <i class="fa fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </form>
+    
+                </div>
+            </div>
+        </div>
+     
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Interacción</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="serverPhrase">Frase del Servidor:</label>
+                            <input type="text" class="form-control" id="serverPhrase" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="userResponse">Tu respuesta:</label>
+                            <input type="text" class="form-control" id="userResponse">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h2>Perfil</h2>
+                    <p>Descripción...</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Nivel 5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>Frase del servidor</h2>
+                    <p id="frase-servidor">Frase proporcionada por el servidor</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="respuesta-usuario">Escribe tu respuesta:</label>
+                            <input type="text" class="form-control" id="respuesta-usuario" placeholder="Tu respuesta">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <h2>Información adicional</h2>
+                    <p>Algunas descripciones y detalles aquí.</p>
+                    <h3>Nivel actual: <span id="nivel-actual">1</span></h3>
+                    <h4>Barra de experiencia</h4>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 my-3 rounded-lg overflow-hidden shadow">
+                    <h2 class="my-3">Frase del servidor</h2>
+                    <p id="frase-servidor" class="my-3">Frase proporcionada por el servidor</p>
+                    <form class="my-3">
+                        <div class="form-group">
+                            <label for="respuesta-usuario">Escribe tu respuesta:</label>
+                            <input type="text" class="form-control my-3" id="respuesta-usuario" placeholder="Tu respuesta">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-4 my-3">
+                    <h2 class="my-3">Información adicional</h2>
+                    <p class="my-3">Algunas descripciones y detalles aquí.</p>
+                    <h3 class="my-3">Nivel actual: <span id="nivel-actual">1</span></h3>
+                    <h4 class="my-3">Barra de experiencia</h4>
+                    <div class="progress my-3">
+                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <p class="col-md-4 mb-0 text-body-secondary">&copy; 2023 Company, Inc</p>
+          
+              <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+              </a>
+          
+              <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+              </ul>
+            </footer>
+          </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
