@@ -1,11 +1,8 @@
-/* .juego {
-    padding: 20px;
-    background: #f8f9fa;
-} */
 .card {
     border: none;
     border-radius: 15px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    height: 100%; /* Esto hace que todas las tarjetas tengan la misma altura */
 }
 .card-body {
     padding: 20px;
@@ -23,3 +20,20 @@
 .progress-bar {
     background-color: #007bff;
 }
+
+.card-imagenes {
+    width: 100px; 
+    height: 120px;
+    object-fit: contain;
+}
+
+.img-deco{
+    width: 200px;     
+}
+
+@media (max-width: 991px){
+    .cajas {        
+        gap: 1rem;        
+    }
+}
+
